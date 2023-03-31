@@ -1,5 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const len = word.length;
+  //loop thru half of the string
+  for(let i=0; i<len/2; i++)
+  {
+    if (word[i] !== word[len -1 -i]){
+      return false;
+    }
+    else{
+      return true;
+    }
+
+  }
+   word = prompt('Enter a word:')
+  //call the function
+  console.log(isPalindrome(madam));
+
 }
 
 /* 
